@@ -1,0 +1,20 @@
+.{
+    .name = .HandEvaluator,
+    .version = "1.0.0",
+    .fingerprint = 0x9050331585870847, // Changing this has security and trust implications.
+    .minimum_zig_version = "0.15.0-dev.286+ddcf6fcdf",
+    .dependencies = .{
+        .ACE_eval = .{
+            .url = "https://github.com/ashelly/ACE_eval/archive/refs/heads/master.zip",
+            .hash = "N-V-__8AACyYAQA-spaQZvUQ1SGTat-CagQ-aiUPL22udKVI",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+        // For example...
+        //"LICENSE",
+        //"README.md",
+    },
+}

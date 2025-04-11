@@ -27,6 +27,7 @@ pub fn build(b: *std.Build) void {
     });
     lib.addIncludePath(ace_eval_dep.path(""));
     lib.linkLibrary(ace_lib);
+    lib.installHeadersDirectory(ace_eval_dep.path("."), "", .{});
 
     b.installArtifact(lib);
 
